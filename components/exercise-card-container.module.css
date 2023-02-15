@@ -1,0 +1,124 @@
+.cardimageIcon {
+  position: relative;
+  width: 373px;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.title {
+  position: relative;
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  font-weight: 600;
+}
+.subtitle {
+  position: relative;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.5px;
+  line-height: 14px;
+  display: none;
+  opacity: 0.67;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.durationChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 29px;
+}
+.div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 1.37px;
+  line-height: 19px;
+  font-weight: 600;
+  display: none;
+}
+.duration {
+  position: relative;
+  width: 72px;
+  height: 29px;
+  flex-shrink: 0;
+  font-size: var(--font-size-4xl);
+}
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-9xs);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.exercisecard {
+  width: 373.33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.imageIcon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 250px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.column1,
+.exercisecard2 {
+  display: flex;
+  flex-direction: column;
+}
+.column1 {
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-4xl);
+}
+.exercisecard2 {
+  width: 373.33px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.exercisecards {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-lg);
+  text-align: left;
+  font-size: var(--font-size-8xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .column1 {
+    flex-direction: row;
+  }
+  .exercisecards {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .column1 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 428px) {
+  .column1 {
+    transform: scale(0.8);
+  }
+  .exercisecards {
+    gap: 0;
+  }
+}

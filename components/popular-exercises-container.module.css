@@ -1,0 +1,32 @@
+.popularExercises {
+  position: relative;
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  font-weight: 600;
+}
+.seeMoreExercises {
+  position: relative;
+  font-size: var(--font-size-sm);
+  letter-spacing: 1.5px;
+  line-height: 12px;
+  text-align: right;
+  opacity: 0.67;
+}
+.popularexercises,
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.popularexercises {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}

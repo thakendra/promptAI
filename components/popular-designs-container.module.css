@@ -1,0 +1,52 @@
+.popularDesigns {
+  position: relative;
+  letter-spacing: 0.3px;
+  line-height: 45px;
+  font-weight: 600;
+}
+.title {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.popularexercises,
+.popularexercisessection {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.popularexercises {
+  gap: var(--gap-3xl);
+}
+.popularexercisessection {
+  padding: var(--padding-5xs) var(--padding-6xl) var(--padding-3xl);
+  text-align: left;
+  font-size: var(--font-size-7xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .popularexercisessection {
+    padding-left: var(--padding-xs);
+    padding-right: var(--padding-xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popularexercisessection {
+    padding-left: var(--padding-6xs);
+    padding-right: var(--padding-6xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .popularexercisessection {
+    padding-left: var(--padding-9xs);
+    padding-right: var(--padding-9xs);
+    box-sizing: border-box;
+  }
+}

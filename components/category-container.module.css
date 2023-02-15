@@ -1,0 +1,76 @@
+.div {
+  position: relative;
+  line-height: 35px;
+  font-weight: 600;
+  opacity: 0.34;
+  mix-blend-mode: normal;
+}
+.courses,
+.title {
+  position: relative;
+  letter-spacing: 0.83px;
+  line-height: 70px;
+}
+.courses {
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.5px;
+  line-height: 23px;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-4xs);
+}
+.arrowIcon {
+  position: relative;
+  width: 26.22px;
+  height: 21.45px;
+  flex-shrink: 0;
+}
+.action,
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.action {
+  flex: 1;
+  padding: 0 0 0 var(--padding-8xl);
+  justify-content: space-between;
+  font-size: var(--font-size-8xl);
+}
+.category {
+  align-self: stretch;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .action {
+    padding-left: var(--padding-md);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: var(--font-size-6xl);
+    line-height: 35px;
+  }
+  .action {
+    padding-left: var(--padding-9xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 428px) {
+  .action {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+}
